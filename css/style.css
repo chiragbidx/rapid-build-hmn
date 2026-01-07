@@ -1,0 +1,75 @@
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+/* ========== Panda Bubble Agency Custom Styles ========== */
+
+/* Hero section padding and image tweaks */
+header[role="banner"] {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media (min-width: 992px) {
+  header[role="banner"] img {
+    max-width: 480px;
+    height: auto;
+  }
+}
+
+/* Services cards: hover effect */
+#services .card:hover,
+#portfolio .card:hover {
+  transform: translateY(-4px) scale(1.03);
+  transition: transform 0.18s;
+  box-shadow: 0 6px 28px 0 rgba(0,0,0,0.07);
+}
+
+/* Section titles */
+section h2.fw-bold {
+  letter-spacing: -0.01em;
+}
+
+.card-title.h6 {
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+/* Testimonials tweaks */
+#testimonials blockquote {
+  position: relative;
+  border-left: 3px solid var(--bs-primary);
+  padding-left: 1.5rem;
+  background: #f8f9fa;
+}
+#testimonials blockquote:before {
+  content: "“";
+  font-size: 2.2rem;
+  position: absolute;
+  left: 0.5rem;
+  top: -0.7rem;
+  color: var(--bs-primary);
+  opacity: 0.15;
+}
+
+/* CTA Button */
+.btn-light {
+  color: var(--bs-primary);
+  border: 2px solid var(--bs-primary);
+}
+.btn-light:hover, .btn-light:focus {
+  background: var(--bs-primary);
+  color: #fff;
+}
+
+/* Footer nav */
+footer nav a {
+  text-decoration: none;
+}
+footer nav a:hover,
+footer nav a:focus {
+  color: var(--bs-primary) !important;
+}
